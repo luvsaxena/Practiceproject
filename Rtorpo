@@ -1,0 +1,4 @@
+RTO is the maximum acceptable downtime after a failure.
+RPO is the maximum acceptable data loss after a failure.
+For example, if a booking system must be restored within 10 minutes and can tolerate losing at most 30 seconds of data,
+then the RTO is 10 minutes and the RPO is 30 seconds.

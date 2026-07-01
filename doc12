@@ -1,0 +1,62 @@
+Governance
+
+Governance is broader.
+
+Governance means:
+
+The policies, controls, ownership, quality standards, and compliance processes that ensure data and AI are used correctly.
+
+Data Governance Examples
+1. Who owns the data?
+
+For example:
+
+Inventory Data
+    Owner → Supply Chain Team
+
+Customer Data
+    Owner → CRM Team
+
+Finance Data
+    Owner → Finance Team
+
+Someone must be responsible.
+
+2. Data Quality
+
+Questions like:
+
+Is data complete?
+Is data accurate?
+Are there duplicates?
+Is data fresh?
+
+These are governance concerns.
+
+3. Access Control
+
+Questions like:
+
+Who can see customer data?
+Who can see salary data?
+Who can access production data?
+
+This includes RBAC.
+
+4. Lineage
+
+Lineage means:
+
+Where did this number come from?
+
+Example:
+
+Dashboard
+    ↓
+Gold Layer
+    ↓
+Silver Layer
+    ↓
+Raw Events
+
+If the CEO asks:

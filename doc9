@@ -1,0 +1,35 @@
+Same idea for Vector Databases
+
+Suppose documents are stored like:
+
+Document
+Plant A Maintenance Manual
+
+Metadata:
+plant_id=A
+Document
+Plant B Maintenance Manual
+
+Metadata:
+plant_id=B
+
+When Manager A asks:
+
+Why did Machine 17 fail?
+
+The retrieval layer adds a filter:
+
+plant_id=A
+
+during vector search.
+
+So instead of:
+
+Search entire vector DB
+
+it performs:
+
+Search vector DB
+WHERE plant_id=A
+
+Only Plant A documents are retrieved.

@@ -1,0 +1,42 @@
+Example
+
+Manager A logs in.
+
+The authentication system gives:
+
+{
+  "user": "managerA",
+  "role": "plant_manager",
+  "plant_id": "A"
+}
+
+Now the user asks:
+
+Why was production lower yesterday?
+
+The retrieval layer automatically injects:
+
+WHERE plant_id = 'A'
+
+into the warehouse query.
+
+Similarly, for vector search:
+
+metadata_filter:
+{
+  plant_id: "A"
+}
+
+Only Plant A documents are retrieved.
+
+The LLM never sees Plant B's data.
+
+The retrieval service extracts:
+
+user_id
+role
+department
+plant_id
+tenant_id
+
+from the token and applies the authorization rules.

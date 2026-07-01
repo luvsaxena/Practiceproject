@@ -1,0 +1,25 @@
+Strongest selling points
+7.5 years at Flipkart
+Tier-0 systems
+Payments & Accounting
+BBD scale
+Microservices migration
+Cross-DC testing
+Reliability engineering
+Tech Lead / Staff experience
+Tekion Team Lead
+RingCentral Lead Engineer
+Okta Staff Engineer
+Architecture work
+Multi-tenant migration
+Monolith decomposition
+Cloud migration (AWS → Azure)
+Kafka/Cassandra/Data Lake
+FinOps initiatives
+Organizational influence
+Design docs influencing VP/Director decisions
+Standards adopted by multiple teams
+Mentoring engineers
+Hiring experience
+
+These are exactly the things an Architect exploratory discussion usually focuses on.

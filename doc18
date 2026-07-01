@@ -1,0 +1,39 @@
+An Architect asks:
+
+What happens if we don't do it for another quarter?
+
+An Architect asks:
+
+How much revenue are we leaving on the table if we don't launch Price drop alerts before the holiday season?
+
+Based on the data, my recommendation would be to fix the P0/P1 reliability issues, launch a limited MVP of Price Drop Alerts before the holiday season, and continue modernization work in parallel. I would present the business impact, technical risks, and engineering effort to the stakeholders. The final decision would be made collaboratively with Product, Engineering, and Business leadership.
+
+That's a very strong Architect answer.
+
+One nuance I'd add:
+
+An Architect should not be passive either.
+
+Avoid sounding like:
+
+"I'll present the facts and whatever business decides, we'll do."
+
+That can sound too hands-off.
+
+A stronger stance is:
+
+"I'll present the facts, explain the trade-offs, and make a recommendation."
+
+For example:
+
+The data suggests that delaying Price Drop Alerts may cost significant revenue during the holiday season,
+whereas delaying part of the modernization work for one quarter carries manageable technical risk. Therefore, my recommendation would be X.
+I would then work with business and engineering leadership to reach alignment.
+
+Notice the difference:
+
+Not dictating.
+Not being passive.
+Influencing through data.
+
+That's usually what Staff Engineers, Principal Engineers, and Architects are expected to do.

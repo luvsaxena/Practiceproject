@@ -1,0 +1,54 @@
+The authorization should happen before retrieval.
+
+Example
+
+Let's say:
+
+Manager A
+    → Plant A
+
+Manager B
+    → Plant B
+
+And the warehouse contains:
+
+production_metrics
+
+plant_id | production
+---------|-----------
+A        | 1000
+B        | 2000
+
+Better Design
+
+When the user logs in:
+
+JWT Token
+User Identity
+Roles
+Plant Access
+
+are already known.
+
+For example:
+
+User = Manager A
+
+Allowed Plants = [A]
+
+When the LLM invokes the SQL tool:
+
+instead of:
+
+SELECT * FROM production_metrics
+
+the retrieval layer injects:
+
+SELECT *
+FROM production_metrics
+WHERE plant_id = 'A'
+
+Only authorized rows are returned.
+
+The LLM never sees Plant B's data.
+

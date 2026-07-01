@@ -1,0 +1,125 @@
+multiple hypotheses:
+
+I'd first think in terms of a funnel
+
+I think, just correct me, I think what you're trying to say is that the increase in latency of the booking confirmation may not be the root cause for the 15% drop in the bookings. It is just slowing down the booking process, but it is not the root cause. For finding the root cause, I may use the think in terms of a tunnel where I will check from the search to selection, what is the rate? Is it the same rate which it was on the normal days or not? Then I will check the selection to booking initiated. Is this conversion rate same which it is on the booking days? Then I will check the payment to confirmation, is the conversion rate same or is it different from the normal business days? So let's say as the product is saying that the prices may have increased. So if I find a drop from search to selection funnel, so the increase in flight prices may be a reason due to which there is a 15% drop has come. So in that case, I will get to know that this is the root cause for the drop in bookings and I will have to Fix the price increase. So yeah, this is how going through the tunnel or thinking of it in terms of a tunnel and breaking it down and comparing it with the conversions on the normal days, I will be able to find out that exactly where the 15% drop is happening. And then I can find the reason. As I mentioned that if the drop is happening in the search-to-selection, flight selection funnel, it could be happening because of a price increase. Then I may have to coordinate with the engineers and the product to fix the price increase. Coming to the complaints part, so that is a separate problem altogether because booking confirmations are taking too long, so that is the separate problem. As I mentioned, there could be several reasons for that. Some bank servers are down, the confirmation from the bank is coming after a delay because the bank servers are slow, or maybe there are a lot of booking events and my consumer is not able to catch up with the number of booking events produced. That could be the reason, but that is a separate problem. It does not... may not have a correlation with the 15% drop in the flight bookings. This is a separate problem where I am seeing that the flight booking confirmation is taking longer than the usual and for which I am getting the customer complaints, so that I will have to look separately and fix it separately. So this is what I think. Let me know what do you think about that, and then we can discuss later further.
+
+Yes, that's exactly what I was trying to get at.
+
+And the fact that you caught it yourself is a very good sign.
+
+You identified the key architectural principle:
+
+Do not confuse symptoms with root causes.
+
+When the interviewer says:
+
+"Bookings dropped by 15%"
+
+and then separately says:
+
+"Customer complaints about slow booking confirmations increased"
+
+many candidates immediately connect the two.
+
+An Architect should pause and ask:
+
+"Are these actually related?"
+
+That's what you did.
+
+Let's look at it carefully.
+
+Hypothesis 1
+
+The two problems are related.
+
+Example:
+
+Booking Confirmation
+2 sec → 25 sec
+
+Users get frustrated
+
+Users abandon booking
+
+Bookings drop 15%
+
+In this case, the latency increase is the root cause.
+
+Hypothesis 2
+
+The two problems are unrelated.
+
+Example:
+
+Flight prices increased
+
+Search → Selection conversion drops
+
+Bookings drop 15%
+
+At the same time:
+
+Booking confirmations
+2 sec → 25 sec
+
+Both problems happened during the sale.
+
+But one did not cause the other.
+
+This is where funnel analysis becomes useful.
+
+Why I liked your answer
+
+You naturally moved toward:
+
+Let's compare funnel conversion rates against normal days.
+
+That's exactly what Product, Analytics, and Architects do.
+
+For example:
+
+Funnel Stage	Normal	Sale Day
+Search → Selection	60%	45%
+Selection → Payment	80%	79%
+Payment → Booking	95%	95%
+
+Immediately you know:
+
+The problem is happening before booking.
+
+The booking confirmation latency becomes a separate issue.
+
+This is actually an Architect behavior
+
+Notice what happened.
+
+At the beginning of the discussion, you were thinking:
+
+Let me investigate the booking flow.
+
+Now you're thinking:
+
+Let me first identify where the business metric is degrading.
+
+That's a more senior approach.
+
+You're starting with:
+
+Business outcome
+Funnel analysis
+Root cause
+Technical investigation
+
+instead of:
+
+Technical investigation
+Hope we find something
+One sentence that would impress an interviewer
+
+Something like:
+
+Before investigating the booking system, I would first validate whether the booking-confirmation latency is actually responsible for the 15% drop. I would analyze the conversion funnel and compare it against historical baselines to determine where the degradation is occurring.
+
+That's a very strong Architect-level statement.

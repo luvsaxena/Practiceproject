@@ -1,0 +1,7 @@
+Keep returning to 3 flagship stories:
+
+Flipkart Accounting Platform
+Tekion Multi-tenant / Cloud Migration
+Okta Staff Engineer initiatives
+
+Those three stories alone can sustain an entire Architect interview.

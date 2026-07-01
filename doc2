@@ -1,0 +1,17 @@
+The business problem was that Flipkart's customer accounting system was a legacy monolithic application that had evolved over many years. It had scalability limitations, onboarding new business use cases was becoming increasingly difficult, and multi-tenancy support had been added incrementally, making the architecture complex and hard to maintain.
+
+The goal was to move to a platform-based, event-driven microservices architecture that would provide clean multi-tenancy, better scalability, improved observability, and faster onboarding of new business models.
+
+One of the biggest architectural challenges was that this was a Tier-0 financial system. Multiple upstream and downstream systems depended on it, including warehouse systems for invoice generation, OMS for payment history, reporting systems, reconciliation pipelines, and customer-facing workflows. Any migration mistake could directly impact customer orders or financial correctness.
+
+From an architecture perspective, we adopted an event-driven model and decomposed the monolith into independent services. We also designed the new platform to support proper multi-tenancy and significantly higher throughput. The resulting platform was able to handle several million orders per day during BBD and scale far beyond the limits of the original system.
+
+The biggest risk was migration. We had millions of existing financial records and numerous dependent systems. To minimize risk, we avoided a big-bang migration. Instead, we implemented a phased migration strategy.
+
+For reads, we built an orchestration layer that could transparently fetch data from either the old system, the new platform, or both, depending on where the data resided. This ensured clients continued to receive a consistent response without being aware of the migration.
+
+For validation, we ran parallel verification by comparing responses from both systems and continuously checking data consistency.
+
+For rollout, we migrated warehouse by warehouse and seller by seller, starting with lower-risk entities and gradually moving toward critical workloads. This allowed us to identify issues early and build confidence before broader adoption.
+
+The outcome was a successful migration with no customer-visible disruption. We achieved a much more scalable architecture, significantly improved onboarding speed for new business use cases, enabled support for previously difficult workflows, and created a foundation that could support Flipkart's future growth.

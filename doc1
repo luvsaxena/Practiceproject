@@ -1,0 +1,9 @@
+Hi, I'm Luv. I have around 12.5 years of experience building large-scale distributed systems, with the last few years operating at Lead and Staff Engineer levels.
+
+I started my career at Flipkart and spent around 7.5 years there. During that time I worked on Tier-0 accounting and payments systems that directly supported Flipkart's core business. One of my most significant contributions was leading the migration of a legacy accounting platform into a scalable microservices-based architecture. This involved data migration, event-driven architecture, multi-tenancy, and ensuring financial correctness for millions of transactions while maintaining very high reliability requirements.
+
+After Flipkart, I joined Tekion where I led several architecture initiatives, including the migration of a large accounting organization from AWS to Azure and the transition from a database-per-tenant model to a multi-tenant architecture. These initiatives required coordination across multiple teams and balancing technical, operational, and business concerns.
+
+At Winzo, RingCentral, and most recently Okta, I continued working on high-scale distributed systems, building platforms from scratch, driving organization-level initiatives, and influencing technical direction beyond individual teams. Examples include a centralized data platform adopted by multiple teams, cloud governance initiatives, and strategic product capabilities at Okta.
+
+I believe I'm ready for an Architect role because my impact has gradually shifted from implementing solutions to defining architecture, driving technical consensus, evaluating trade-offs, and influencing multiple teams. I've repeatedly worked in situations where requirements were ambiguous, and my role was to create clarity, define the technical strategy, and guide execution. That's very similar to what I understand the Architect role at Cleartrip requires.

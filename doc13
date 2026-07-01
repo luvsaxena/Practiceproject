@@ -1,0 +1,27 @@
+For almost every question, try this structure:
+
+Requirement
+
+We need to handle 100k concurrent booking attempts.
+
+Constraints
+
+Correctness is critical, but throughput is also important.
+
+Options
+
+SQL optimistic locking vs Redis reservation layer.
+
+Trade-off
+
+SQL gives strong consistency but may bottleneck under extreme contention.
+
+Decision
+
+Redis reservation layer with atomic Lua scripts and durable persistence.
+
+Failure Handling
+
+TTL expiry, durable datastore as system of record, rebuild on recovery.
+
+That structure makes an interviewer think, "This person can drive architecture discussions," which is exactly what Cleartrip will be evaluating in an Architect exploratory round.
