@@ -1,0 +1,70 @@
+Recent English Speaking Practice
+Selected chunks from our recent practice — confidence, articulation, structure and concise delivery
+
+1. What I am practising
+My goal is to communicate my thoughts clearly, confidently and precisely. I want my delivery to become natural, concise and structured while keeping my confidence and conviction high.
+
+2. Quiet confidence
+“The confidence and conviction should come out of yourself. It should flow.”
+“Keeping the conversation concise and tight gives confidence to your voice and adds weight to your statement.”
+“It shows a quiet kind of confidence.”
+Confidence does not mean speaking quickly. Calm, clear and deliberate delivery can project more confidence than speed.
+
+3. Data democratization
+Problem: People are not always able to discover the data they need when they need it. Sometimes they know the data exists but do not know where it resides.
+Solution: We are building a central data platform where data is catalogued and discoverable, with a governance layer through which the right people can request access.
+Impact: The right people can get access to the right data quickly, helping them make better operational and business decisions.
+Tight version: “We are providing a central data platform where the data is catalogued and discoverable. The right people can discover the data, request access through governance, and get access within minutes. This helps them in their daily operations.”
+
+4. Indian startups and applied AI
+Core point: A major shift I see is the growth of applied AI in India, with startups using AI to solve real problems in traditional industries.
+Examples discussed: Healthcare and insurance use cases such as contract review, document analysis, claim processing and extracting insights from large volumes of data.
+Takeaway: “Indian startups are combining technology, innovation and cost efficiency to solve practical problems and create value for global customers.”
+
+5. Architecture evaluation
+Situation: I had to recommend an architecture for a central data platform across Bronze, Silver and Gold layers.
+Approach: I compared Databricks and open-source options across cost, maintenance overhead, flexibility, scale and development speed.
+Decision: For simpler Bronze/Silver processing, I recommended LDP because of its simplicity and lower maintenance overhead. For heavier Silver-to-Gold transformations, I evaluated Spark and DBT and favoured the more cost-effective approach.
+Result: I presented the trade-offs and recommendations, and the team aligned on the architecture.
+
+6. Influencing without formal authority — Flipkart
+Situation: A warehouse team was making synchronous invoice-generation calls, and during peak events this created significant load and reliability problems.
+Action: I proposed an event-driven approach using Kafka. Because the warehouse workflow required a quick response, I also proposed a fallback API if the callback did not arrive within the agreed SLA.
+Result: The warehouse team agreed to the approach. More than 99% of calls followed the asynchronous path, with the API serving as a fallback.
+
+7. SQL performance decision
+Situation: Multiple SQL queries were taking minutes because the query planner was selecting inefficient indexes.
+Action: I advocated adding index-hint support to our shared SQL wrapper so teams could explicitly guide the query planner.
+Result: My team used the capability to fix their queries, and the shared library was subsequently used by other teams as well.
+
+8. Explaining CDC simply
+“Instead of copying everything, we capture just what changed.”
+More complete: “We take one full snapshot to start, then we only send the changes. That reduces the amount of data we move and process.”
+
+9. Disagreeing constructively
+Situation: During planning for a long project, the team was going into detailed planning for months that were still far away.
+View: I felt that detailed planning for the seventh, eighth and ninth months at the beginning of the project was unnecessary and could become over-engineering.
+Approach: I raised the concern but stayed aligned with the team's direction and kept the work moving.
+
+10. Mistake and learning
+Situation: I was working on a project with a fixed release timeline. I encountered issues near the end and realised the task was at risk of missing the release.
+Mistake: I kept trying to solve the problem instead of communicating the delivery risk early.
+Lesson: If a project is at risk, communicate it before the deadline, explain the reason, and give the team enough time to replan.
+
+11. Delivery rules
+- Lead with the point, not the preamble.
+- Use shorter sentences.
+- Pause instead of filling silence.
+- Use one concrete example and one outcome.
+- Explain business impact, not only technical details.
+- Don't rush just because you are confident.
+- Give additional detail when useful, but lead with the headline.
+- In interviews, let the interviewer ask for deeper technical details.
+
+12. Practice formula
+Situation → Decision / Action → Reasoning → Result → Stop.
+For technical leadership answers: Problem → Options → Trade-offs → Recommendation → Business impact.
+
+13. Confidence reminder
+“Clear thought. Calm delivery. Strong conviction. One point at a time.”
+The objective is not perfect English. The objective is to make your thinking easy for another person to understand.
